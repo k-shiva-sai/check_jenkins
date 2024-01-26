@@ -5,7 +5,7 @@ pipeline {
             steps {
                 def a,b = [1,2]
                 var c = a+b
-                if c==3 {
+                if (c==3) {
                     println(c)
                 }
             }
