@@ -3,11 +3,13 @@ pipeline {
     stages {
         stage ("first") {
             steps {
-                def a,b = [1,2]
-                var c = a+b
-                if (c==3) {
-                    println(c)
-                    println(${env.BUILD_ID})
+                script {
+                    a,b = [,2]
+                    var c = a+b
+                    if (c==3) {
+                        println(c)
+                        println(${env.BUILD_ID})
+                    }
                 }
             }
         }
