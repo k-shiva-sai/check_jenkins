@@ -7,6 +7,7 @@ pipeline {
                 var c = a+b
                 if (c==3) {
                     println(c)
+                    println(${env.BUILD_ID})
                 }
             }
         }
