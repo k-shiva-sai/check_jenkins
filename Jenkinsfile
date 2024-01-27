@@ -18,7 +18,7 @@ pipeline {
                     for (i in a) {
                         println "The element is ${i}"
                     }
-                    println "the age is ${params.age}"
+                    println "the age is ${params.age+10}"
                     if (c==3) {
                         println(c)
                         println(env.BUILD_ID)
