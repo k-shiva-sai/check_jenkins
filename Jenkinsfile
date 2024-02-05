@@ -13,8 +13,10 @@ pipeline {
                     c = a+b
                     def s = "Shiva SAi konda"
                     def a = s.split(" ")
+                    def l = s.tokenize(" ")
                     println a
                     println s
+                    println l
                     for (i in a) {
                         println "The element is ${i}"
                     }
