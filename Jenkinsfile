@@ -20,7 +20,8 @@ pipeline {
                     for (i in a) {
                         println "The element is ${i}"
                     }
-                    println "the age is " params.age+10
+                    def updated_age = param.age+10
+                    println "the age is ${updated_age}"
                     if (c==3) {
                         println(c)
                         println(env.BUILD_ID)
